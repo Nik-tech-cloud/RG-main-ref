@@ -1,0 +1,4 @@
+1. Za zagon igre je potreben server.
+2. Datoteke in mape prestavimo v root mapo serverja (oz. na poljubno pot kjer se nahaja server).
+3. Odpremo brskalnik in v njega vpišemo ip serverja in vrata (in pot do index.html, če se ne nahaja v root mapi).
+4. Veselo igranje!

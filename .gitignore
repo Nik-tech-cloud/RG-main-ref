@@ -1,0 +1,8 @@
+
+*.blend1
+bin/server.js
+*.DS_Store
+.vscode/settings.json
+scripts/.Rhistory
+temp/
+*.zip

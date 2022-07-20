@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Seminarska naloga</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <script type="text/javascript" src="scripts/lib/gl-matrix-min.js"></script>
+    <script type="module" src="scripts/Game.js"></script>
+    <script>
+        
+    </script>
+</head>
+
+<body class="center">
+    <div id="interact" class="interact">
+        <div class="bigtext">This game uses music and sound effects</div>
+        <br><br>
+        <div class="btncontainer"><button class="btn" id="interactbtn">OK</button></div>
+    </div>
+    <div id="info" class="s200">
+        Info:
+        <ul>
+            <li>Rock are undestructable</li>
+            <li>Hit enemies to gain points</li>
+            <li>Collect diamonds to gain points</li>
+            <li>Collect shields to gain more shields</li>
+        </ul>
+    </div>
+    <div id="gamecont" class="container">
+        <div id="gameuicontainer" class="overlay hidden">
+            <div id="shields" class="item"></div>
+            <div class="item score">SCORE<br><span id="score"></span></div>
+            <div class="item topscore">HIGHSCORE<br><span id="highscoreUI" ></span></div>
+        </div>
+        <div id="menucontainer" class="menu">
+            <div class="btncontainer"><button class="btn" id="newgamebtn">NEW GAME</button></div>
+            <div class="btncontainer"><button class="btn" id="optionsbtn">OPTIONS</button></div>  
+        </div>
+        <div id="optionscontainer" class="menu hidden">
+            <label for="music">Music</label>
+            <input type="range" min=0 max=1 step=0.01 id="musicslider" name="music">
+            <br>
+            <label for="sfx">Sound Effects</label>
+            <input type="range" min=0 max=1 step=0.01 id="sfxslider" name="sfx">
+            <br>
+            <div class="btnsmallcontainer"><button class="btnsmall" id="confirmbtn">OK</button></div>  
+            <div class="btnsmallcontainer"><button class="btnsmall hidden" id="mainmenubtn">MAIN MENU</button></div>
+        </div>
+        <div id="diecontainer" class="menu hidden">
+            <div class="bigtext">YOU DIED</div>
+            <br>
+            <div class="score">HIGHSCORE<br><span id="diescore">0</span></div>
+            <br>
+            <div class="score">SCORE<br><span id="diehighscore">0</span></div>
+            
+            <br>
+            <div class="btnsmallcontainer"><button class="btnsmall" id="retrybtn">RETRY</button></div>
+            <div class="btnsmallcontainer"><button class="btnsmall" id="mainmenubtn2">MAIN MENU</button></div>
+        </div>
+        
+        <div id="loadingContainer" class="menu loading">
+            
+                Loading
+                <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+            
+        </div>
+            <canvas id="canvas" class="fullscreen"></canvas>
+        <div id="fullscreencontainer" class="right">
+            <div class="btnsmallcontainer"><button class="btnsmall" id="fullscreenbtn">FULLSCREEN</button></div> 
+        </div>
+    </div>
+    <div id="controlls" class="s200">
+        Controls:
+        <ul>
+            <li>
+                AWSD - movement
+            </li>
+            <li>
+                SPACE - shoot
+            </li>
+            <li>
+                P - pause
+            </li>
+            <li>
+                H - full window screen
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

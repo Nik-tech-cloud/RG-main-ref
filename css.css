@@ -1,0 +1,235 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #696969;
+}
+
+@font-face  {
+    font-family: 'Akashi';
+    src: url('resources/akashi.ttf');
+}
+
+* {
+    font-family: 'Akashi';
+}
+
+.hidden{
+    display: none !important;
+}
+
+.container{
+    color:white;
+    min-height: 600px;
+    min-width: 800px;
+    position: relative;
+    width: 800px;
+    height: 600px;
+}
+
+.fullscreen{
+    color:white;
+    width: 100%;
+    height: 100%;
+}
+
+.item{
+    padding: 7px;
+    width: 200px;
+}
+
+.score{
+    text-align: center;
+}
+
+.interact{
+    color:white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.topscore{
+    text-align: right;
+}
+.s200{
+    width: 250px;
+    margin: 80px;
+}
+
+.center{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.bigtext{
+    font-size: xx-large;
+}
+
+.btn{
+    width: 150px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color:rgb(204, 255, 145);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn:hover{
+    width: 155px;
+    height: 55px;
+    border: 1px solid rgb(255, 0, 0);
+}
+
+.btnsmall{
+    width: 105px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color:rgb(204, 255, 145);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btnsmall:hover{
+    width: 110px;
+    height: 30px;
+    border: 1px solid rgb(255, 0, 0);
+}
+
+.overlay {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.btncontainer{
+    margin: 7px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 155px;
+    height: 55px;
+}
+
+.btnsmallcontainer{
+    margin: 7px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 110px;
+    height: 30px;
+}
+
+.menu{
+    stroke: 1px black;
+    color:white;
+    background-color: #00000071;
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flexleft{
+    display: flex;
+}
+
+.right{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.inline{
+    display: flex;
+    justify-content: space-between;
+}
+
+a.back {
+    display: block;
+    padding: 5px 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+
+a.back:hover {
+    background: #ddd;
+}
+
+.loading{
+    font-size: x-large;
+    background-color: #000000;
+}
+
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+.lds-ellipsis div {
+    position: absolute;
+    top: 15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 1s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 1s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 1s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 1s infinite;
+}
+@keyframes lds-ellipsis1 {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+@keyframes lds-ellipsis3 {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+}
+@keyframes lds-ellipsis2 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(24px, 0);
+    }
+}
+  
